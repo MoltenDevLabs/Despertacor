@@ -12,12 +12,11 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
-      title: "Nuxt template",
+      title: "Coral Solidària Reus",
       meta: [
         {
-          name: "Nuxt template",
-          content:
-            "Nuxt, tailwind, google fonts, supabase, nuxt icons, color mode, device",
+          name: "Coral Solidària Reus",
+          content: "Cançons, membres i algunes coses més",
           charset: "UTF-8",
         },
       ],
@@ -40,11 +39,9 @@ export default defineNuxtConfig({
     families: {
       Lato: {
         wght: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-        ital: [100, 200, 300, 400, 500, 600, 700, 800, 900],
       },
-      Merriweather: {
+      "Open Sans": {
         wght: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-        ital: [100, 200, 300, 400, 500, 600, 700, 800, 900],
       },
     },
     display: "swap", // 'auto' | 'block' | 'swap' | 'fallback' | 'optional'
@@ -60,7 +57,7 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: "",
     preference: "system",
-    fallback: "light",
+    fallback: "dark",
   },
   tailwindcss: {
     cssPath: "@/assets/css/tailwind.css",
@@ -80,4 +77,7 @@ export default defineNuxtConfig({
     },
   },
   pages: true,
+  supabase: {
+    redirect: false,
+  },
 });

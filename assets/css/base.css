@@ -1,0 +1,215 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", "Lato", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply container min-w-full
+      text-surface-900
+      bg-surface-50 dark:bg-surface-900 
+      prose prose-stone dark:prose-invert 
+      prose-headings:dark:text-surface-200 
+      prose-li:list-none 
+      prose-a:no-underline 
+      transition-all duration-500 ease-in-out;
+  }
+
+  main {
+    @apply container max-w-none z-0
+      relative p-[4%] px-[6%] 
+      bg-surface-50 dark:bg-surface-900
+      prose prose-stone dark:prose-invert 
+      prose-headings:my-4 md:prose-headings:my-4 lg:prose-headings:my-4 xl:prose-headings:my-4
+      transition-all duration-500 ease-in-out;
+  }
+
+  header,
+  footer {
+    @apply container min-w-full z-10
+      bg-primary-50 dark:bg-primary-900 
+      prose prose-stone dark:prose-invert 
+      prose-a:no-underline
+      transition-all duration-500 ease-in-out;
+  }
+
+  ul,
+  li {
+    @apply p-0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-header;
+  }
+
+  a {
+    @apply dark:text-surface-300;
+  }
+  nuxt-link {
+    @apply no-underline;
+  }
+}
+header a,
+footer a {
+  @apply font-header;
+}
+header a.router-link-exact-active,
+footer a.router-link-exact-active {
+  @apply text-tertiary-500 dark:text-tertiary-500 
+    font-semibold
+    transition-all duration-500 ease-in-out;
+}
+header a:hover,
+footer a:hover {
+  @apply text-tertiary-500 
+    brightness-90 dark:brightness-110
+    transition-all duration-300 ease-in-out;
+}
+
+@layer components {
+  .btn {
+    @apply relative font-medium
+      text-primary-100 dark:text-surface-900
+      bg-primary-700
+      brightness-100
+      overflow-hidden 
+      px-3 py-2 rounded-lg
+      shadow-sm shadow-stone-800/40 dark:shadow-stone-300/40
+      prose prose-stone dark:prose-invert 
+      prose-li:list-none 
+      prose-a:no-underline 
+      align-middle text-center 
+      cursor-pointer whitespace-nowrap 
+      transition-all duration-500 ease-in-out;
+  }
+  .btn:hover {
+    @apply brightness-90 dark:brightness-110
+      shadow shadow-stone-800/40 dark:shadow-stone-300/40;
+  }
+  .btn:focus {
+    @apply brightness-90 dark:brightness-110;
+  }
+  .btn:active {
+    @apply brightness-75 dark:brightness-125
+      shadow-none;
+  }
+  .btn:disabled {
+    @apply opacity-50 
+      text-surface-800 bg-surface-300 
+      shadow-none 
+      cursor-default;
+  }
+
+  .btn-text {
+    @apply relative font-medium
+      text-primary-600
+      brightness-100 
+      overflow-hidden 
+      px-3 py-2 rounded-lg
+      prose prose-stone dark:prose-invert 
+      prose-li:list-none 
+      prose-a:no-underline 
+      align-middle text-center 
+      cursor-pointer whitespace-nowrap 
+      transition-all duration-500 ease-in-out;
+  }
+  .btn-text:hover {
+    @apply brightness-90 dark:brightness-110
+      shadow shadow-stone-800/40 dark:shadow-stone-300/40 
+      outline outline-1 outline-offset-0 
+      border-primary-600;
+  }
+  .btn-text:focus {
+    @apply brightness-90 dark:brightness-110;
+  }
+  .btn-text:active {
+    @apply brightness-75 dark:brightness-125
+      shadow-none;
+  }
+  .btn-text:disabled {
+    @apply opacity-50
+      text-surface-800 bg-surface-300 
+      shadow-none outline-0 
+      cursor-default;
+  }
+
+  .inp {
+    @apply py-1 px-2 w-full
+      dark:text-surface-900 
+      bg-surface-50 dark:bg-surface-300
+      rounded-lg outline outline-surface-900 outline-1 outline-offset-0;
+  }
+  .inp:hover {
+    @apply brightness-95 
+      border-primary-600;
+  }
+  .inp:focus {
+    @apply brightness-90;
+  }
+  .inp:active {
+    @apply brightness-90;
+  }
+  .inp:disabled {
+    @apply opacity-50
+      text-surface-800 bg-surface-300 
+      cursor-default;
+  }
+  .inp-succes-field {
+    @apply outline-green-500;
+  }
+  .inp-error-field {
+    @apply outline-red-500;
+  }
+  .inp-error-text {
+    @apply text-xs mt-2 -mb-6
+    text-red-500 dark:text-red-400;
+  }
+
+  .card {
+    @apply p-1  
+      bg-surface-100 dark:bg-surface-800 
+      border rounded-md outline-offset-0
+      border-primary-300 dark:border-primary-900
+      shadow-md shadow-stone-800/40 dark:shadow-stone-300/40;
+  }
+  .auth-card {
+    @apply py-6 px-8 sm:py-8 my-8 mx-[4%] sm:mx-[12%] sm:my-16 md:mx-[20%] lg:mx-[28%] xl:mx-[36%] xl:my-24
+      bg-transparent dark:bg-transparent backdrop-blur-sm
+      border rounded-md outline-offset-0 
+      border-primary-300 dark:border-primary-900
+      shadow-[0px_0px_12px_0px_rgba(0,0,0,0.4)] shadow-stone-800/40 dark:shadow-stone-300/40;
+  }
+  .modal {
+    @apply absolute p-12 top-1/2 left-1/2 z-50
+      flex flex-col justify-center items-center 
+      border backdrop-blur-md rounded-md border-surface-800 dark:border-surface-300
+      shadow-[0px_0px_70px_8px_rgba(0,0,0,0.56)] shadow-stone-800/40 dark:shadow-stone-300/40 
+      transform -translate-x-1/2 -translate-y-1/2
+      transition-all duration-500;
+  }
+  .bg-modal {
+    @apply blur-sm brightness-50 pointer-events-none overflow-hidden z-10
+      transition-all duration-500;
+  }
+
+  .nuxt-icon svg {
+    @apply text-4xl mb-0 min-w-max;
+  }
+  .theme-icon {
+    @apply text-surface-900 dark:text-surface-200 
+      border rounded-full p-1 opacity-90
+      transition-all duration-300 ease-in-out;
+  }
+  .theme-icon:hover {
+    @apply opacity-80 dark:opacity-100;
+  }
+}

@@ -1,0 +1,39 @@
+/*  Popup Transition HTML:<transition name="pop"> */
+.pop-enter-active,
+.pop-leave-active {
+  @apply transition-all duration-500;
+}
+
+.pop-enter-from,
+.pop-leave-to {
+  @apply opacity-0 scale-0;
+}
+
+/* Section Transition HTML:class="fade-in-effect" / JS:useFadeInEffect();*/
+.fade-in-effect {
+  @apply opacity-0 scale-90 transition-all translate-y-12 duration-1000;
+}
+
+/* Page Transition */
+.page-enter-active,
+.page-leave-active {
+  @apply transition-all duration-500;
+}
+.page-enter-from {
+  @apply opacity-0 transform -translate-x-full;
+}
+.page-leave-to {
+  @apply opacity-0 transform translate-x-full;
+}
+
+/* Layout Transition */
+.layout-enter-active,
+.layout-leave-active {
+  @apply transition-all duration-500;
+}
+.layout-enter-from {
+  @apply opacity-0 transform -translate-x-full;
+}
+.layout-leave-to {
+  @apply opacity-0 transform translate-x-full;
+}

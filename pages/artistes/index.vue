@@ -21,7 +21,7 @@ const noms = [
   "Cantant 5",
 ];
 const imageSrc = [
-  "/Coral/assets/images/mussol1.jpg",
+  "/assets/images/mussol1.jpg",
   "assets/images/mussol2.png",
   "assets/images/mussol3.png",
   "assets/images/mussol4.png",

@@ -5,7 +5,7 @@
       <header class="mx-auto px-[10%] flex items-center justify-between">
         <div class="flex gap-2 items-center">
           <nuxt-link to="/" @click="scrollToTop()">
-            <nuxt-icon :name="'logo'" filled />
+            <nuxt-icon :name="'logoM'" filled />
           </nuxt-link>
           <h5>Coral Solidària Reus</h5>
         </div>
@@ -77,7 +77,7 @@
       >
         <div class="flex gap-2 items-center">
           <nuxt-link to="/" @click="scrollToTop()">
-            <nuxt-icon :name="'logo'" title="Home" filled />
+            <nuxt-icon :name="'logoM'" title="Home" filled />
           </nuxt-link>
           <h5>Coral Solidària Reus</h5>
         </div>
@@ -128,7 +128,7 @@
         <div class="col-span-full">
           <div class="flex gap-2 items-center">
             <nuxt-link to="/" @click="scrollToTop()">
-              <nuxt-icon :name="'logo'" title="Home" filled />
+              <nuxt-icon :name="'logoM'" title="Home" filled />
             </nuxt-link>
             <h5>Coral Solidària Reus</h5>
           </div>

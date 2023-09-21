@@ -77,4 +77,7 @@ export default defineNuxtConfig({
     },
   },
   pages: true,
+  supabase: {
+    redirect: false,
+  },
 });

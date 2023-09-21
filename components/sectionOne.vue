@@ -1,6 +1,8 @@
 <template>
   <div>
-    <p>Aqui hi ha espai per posar una mica de presentació o alguna cosa així</p>
+    <p class="pt-24">
+      Aqui hi ha espai per posar una mica de presentació o alguna cosa així
+    </p>
   </div>
 </template>
 

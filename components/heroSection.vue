@@ -8,10 +8,10 @@
     </h2>
     <div class="flex my-8">
       <nuxt-link to="/temes">
-        <button class="btn">Cançons</button>
+        <button class="btn dark:text-surface-300">Cançons</button>
       </nuxt-link>
       <nuxt-link to="/artistes">
-        <button class="btn-text ml-4 text-surface-300 dark:border-surface-300">
+        <button class="btn ml-4 dark:text-surface-300 dark:border-surface-300">
           Artistes
         </button>
       </nuxt-link>

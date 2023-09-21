@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxtjs/google-fonts",
     "nuxt-icons",
+    "@nuxtjs/supabase",
     "@nuxtjs/color-mode",
     "@nuxtjs/device",
   ],

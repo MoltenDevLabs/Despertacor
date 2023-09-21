@@ -67,15 +67,6 @@
               >Concerts</nuxt-link
             >
           </li>
-          <!--           <li>
-            <nuxt-link
-              :to="user ? '/profile' : '/auth'"
-              @click="scrollToTop()"
-              class="btn"
-            >
-              {{ user ? "PROFILE" : "LOG IN" }}
-            </nuxt-link>
-          </li> -->
         </ul>
       </header>
     </div>
@@ -118,17 +109,6 @@
               {{ themeStore.isDarkTheme ? "light_mode" : "dark_mode" }}
             </i>
           </button>
-          <!--           <ul>
-            <li>
-              <nuxt-link
-                :to="user ? '/profile' : '/auth'"
-                @click="scrollToTop()"
-                class="btn"
-              >
-                {{ user ? "PROFILE" : "LOG IN" }}
-              </nuxt-link>
-            </li>
-          </ul> -->
         </nav>
       </header>
     </div>
@@ -175,49 +155,9 @@
                   >Concerts</nuxt-link
                 >
               </li>
-              <!--               <li class="text-xs lg:text-sm">
-                <nuxt-link to="/auth" @click="scrollToTop()">Log in</nuxt-link>
-              </li>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/auth/signup" @click="scrollToTop()"
-                  >Sign up</nuxt-link
-                >
-              </li>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/profile" @click="scrollToTop()"
-                  >Profile</nuxt-link
-                >
-              </li> -->
             </ul>
           </nav>
         </div>
-        <!--         <div class="">
-          <nav>
-            <ul>
-              <h6 class="font-bold text-xs lg:text-sm mb-2">Auth Links</h6>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/auth" @click="scrollToTop()">Log in</nuxt-link>
-              </li>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/auth/signup" @click="scrollToTop()"
-                  >Sign up</nuxt-link
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="">
-          <nav>
-            <ul>
-              <h6 class="font-bold text-xs lg:text-sm mb-2">User Links</h6>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/profile" @click="scrollToTop()"
-                  >Profile</nuxt-link
-                >
-              </li>
-            </ul>
-          </nav>
-        </div> -->
         <div class="absolute inset-x-0 bottom-0 flex justify-end">
           <p class="text-xs tracking-wide m-4 opacity-60">
             Made with<span
@@ -238,7 +178,6 @@ const hamburgerMenuLine =
 
 import { useThemeStore } from "@/stores/themeStore";
 const themeStore = useThemeStore();
-const user = useSupabaseUser();
 
 const navMenu = ref(false);
 const openMenu = () => {

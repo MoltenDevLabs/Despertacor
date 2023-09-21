@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@pinia/nuxt",
     "@nuxtjs/google-fonts",
-    "@nuxtjs/supabase",
     "nuxt-icons",
     "@nuxtjs/color-mode",
     "@nuxtjs/device",
@@ -38,10 +37,10 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Lato: {
-        wght: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+        wght: [200, 300, 400, 500, 600, 700, 800],
       },
       "Open Sans": {
-        wght: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+        wght: [200, 300, 400, 500, 600, 700, 800],
       },
     },
     display: "swap", // 'auto' | 'block' | 'swap' | 'fallback' | 'optional'
@@ -77,7 +76,4 @@ export default defineNuxtConfig({
     },
   },
   pages: true,
-  supabase: {
-    redirect: false,
-  },
 });

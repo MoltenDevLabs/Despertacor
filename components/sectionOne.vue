@@ -1,7 +1,9 @@
 <template>
   <div>
     <p class="pt-24">
-      Aqui hi ha espai per posar una mica de presentació o alguna cosa així
+      Aquesta és una web pensada per al nostre ús, un lloc on trobar de manera
+      fàcil el repertori i poder fer una mica d'arxiu dels esdeveniments de la
+      coral.
     </p>
   </div>
 </template>

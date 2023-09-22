@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h3>Més Enllà</h3>
     <p>
       Més enllà dels teus problemes,<br />
       més enllà d'aquesta pena<br />

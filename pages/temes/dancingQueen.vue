@@ -1,7 +1,7 @@
 <template>
   <div>
+    <h3>Dancing Queen</h3>
     <p>
-      Ooh <br />
       You can dance <br />
       You can jive <br />
       Having the time of your life <br />

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h3>Que Tinguem Sort</h3>
     <p>
       Si em dius "adeu" <br />
       Vull que el dia sigui net i clar <br />

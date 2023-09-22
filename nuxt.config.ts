@@ -80,4 +80,12 @@ export default defineNuxtConfig({
   supabase: {
     redirect: false,
   },
+  runtimeConfig: {
+    public: {
+      supabaseUrl: process.env.SUPABASE_URL,
+    },
+    private: {
+      supabaseKey: process.env.SUPABASE_KEY,
+    },
+  },
 });

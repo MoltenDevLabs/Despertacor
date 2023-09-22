@@ -3,7 +3,7 @@
     <div class="flex flex-col border-2 w-full text-center">
       <div class="border-b-2">
         <h5 class="text-center uppercase font-semibold tracking-wider">
-          Cançons
+          Repertori
         </h5>
       </div>
       <div class="flex justify-center gap-2 px-2">

@@ -7,7 +7,7 @@
           <nuxt-link to="/" @click="scrollToTop()">
             <nuxt-icon :name="'logoS'" filled />
           </nuxt-link>
-          <h5>Coral Solidària Reus</h5>
+          <h5>Coral MusSolidària</h5>
         </div>
         <ul>
           <button
@@ -79,7 +79,7 @@
           <nuxt-link to="/" @click="scrollToTop()">
             <nuxt-icon :name="'logoS'" title="Home" filled />
           </nuxt-link>
-          <h5>Coral Solidària Reus</h5>
+          <h5>Coral MusSolidària</h5>
         </div>
         <nav class="flex gap-4 items-center">
           <ul class="flex gap-12 text-lg uppercase tracking-widest my-4">
@@ -130,7 +130,7 @@
             <nuxt-link to="/" @click="scrollToTop()">
               <nuxt-icon :name="'logoS'" title="Home" filled />
             </nuxt-link>
-            <h5>Coral Solidària Reus</h5>
+            <h5>Coral MusSolidària</h5>
           </div>
         </div>
         <div class="">

@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <h1 class="font-semibold sm:text-5xl lg:text-6xl">
-      Web de la Coral Solidària Reus
+      Web de la Coral MusSolidària
     </h1>
     <h2 class="my-16 md:my-20 font-semibold text-xl">
       Recurs per trobar les lletres, coneixer les artistes i més

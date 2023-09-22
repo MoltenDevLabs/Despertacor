@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-center bg-cover bg-no-repeat bg-fixed bg-[url('/assets/images/heroBackground.jpg')]"
+    class="bg-center bg-cover bg-[url('/assets/images/heroBackground2.jpg')]"
   ></div>
 </template>
 

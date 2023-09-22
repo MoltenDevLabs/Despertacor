@@ -3,7 +3,7 @@
     <div class="flex flex-col border-2 w-full text-center">
       <div class="border-b-2">
         <h5 class="text-center uppercase font-semibold tracking-wider">
-          Cançons
+          Repertori
         </h5>
       </div>
       <div class="flex justify-center gap-2 px-2">
@@ -23,7 +23,7 @@
             </li>
             <li class="cursor-pointer">
               <nuxt-link to="/temes/quanTotSenlaira"
-                >Quan Tot S'enlaira</nuxt-link
+                >Quan Tot s'Enlaira</nuxt-link
               >
             </li>
             <li class="cursor-pointer">
@@ -39,7 +39,7 @@
               <nuxt-link to="/temes/">Dona Dona*</nuxt-link>
             </li>
             <li class="cursor-pointer">
-              <nuxt-link to="/temes/">Good night sweetheart*</nuxt-link>
+              <nuxt-link to="/temes/">Good Night Sweetheart*</nuxt-link>
             </li>
           </ul>
         </div>

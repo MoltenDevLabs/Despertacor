@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h3>I Have a Dream</h3>
     <p>
       I Have a Dream, a song to sing <br />
       To help me cope, with anything <br />

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h3>Quan Tot s'Enlaira</h3>
     <p>
       Vaig, estar temptant la sort <br />
       Mesurant les paraules <br />

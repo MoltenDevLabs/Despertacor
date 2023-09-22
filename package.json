@@ -6,17 +6,18 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "predeploy": "npm run build"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/device": "^3.1.1",
     "@nuxtjs/google-fonts": "^3.0.2",
-    "@nuxtjs/supabase": "^1.1.0",
+    "@nuxtjs/supabase": "^1.1.2",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/typography": "^0.5.10",
-    "@types/node": "^18.17.0",
+    "@types/node": "^18.17.18",
     "nuxt": "^3.7.3"
   },
   "overrides": {

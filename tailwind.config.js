@@ -71,7 +71,6 @@ module.exports = {
       },
     },
     backgroundImage: {
-      texture: `url('assets/images/volcanic-rock-texture-1.jpg')`,
       mainBackground: `url('assets/images/heroBackground.jpg')`,
     },
   },

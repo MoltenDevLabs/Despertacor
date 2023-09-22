@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h3>Cant de Lluita</h3>
     <p>
       Som en acte de protesta <br />
       Som mans fredes vora el foc <br />

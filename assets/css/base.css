@@ -31,7 +31,7 @@
   header,
   footer {
     @apply container min-w-full z-10
-      bg-primary-50 dark:bg-primary-900 
+      bg-primary-100 dark:bg-primary-700 
       prose prose-slate dark:prose-invert 
       prose-a:no-underline
       transition-all duration-500 ease-in-out;
@@ -79,7 +79,7 @@ footer a:hover {
   .btn {
     @apply relative font-medium
       text-primary-100 dark:text-surface-900
-      bg-primary-700
+      bg-primary-600
       brightness-100
       overflow-hidden 
       px-3 py-2 rounded-lg

@@ -46,7 +46,7 @@
         >photo_library</nuxt-link
       >
       <nuxt-link
-        :to="user ? '/profile' : '/auth'"
+        :to="user ? '/perfil' : '/auth' /* signInWithGoogle() */"
         @click="scrollToTop()"
         class="material-icons-outlined"
       >
@@ -171,6 +171,16 @@
 <script setup>
 import { useThemeStore } from "@/stores/themeStore";
 const themeStore = useThemeStore();
+const user = useSupabaseUser();
+
+/* import { useUserStore } from "~/stores/userStore";
+const userStore = useUserStore();
+const router = useRouter();
+
+const signInWithGoogle = () => {
+  userStore.signInWithGoogle();
+  router.push("/");
+}; */
 
 const scrollToTop = () => {
   window.scrollTo({

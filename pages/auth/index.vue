@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Entra amb el teu compte de Google</h2>
+    <h2 class="mt-20">Entra amb el teu compte de Google</h2>
     <button @click="signInWithGoogle()" class="btn">Entra</button>
   </div>
 </template>
@@ -12,7 +12,7 @@ const router = useRouter();
 
 const signInWithGoogle = () => {
   userStore.signInWithGoogle();
-  router.push("/");
+  /* router.push("/"); */
 };
 </script>
 

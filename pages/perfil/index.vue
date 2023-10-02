@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h2>S'ha de fer pagina de perfil amb foto, descripcio, i altre info</h2>
+    <h2 class="mt-20">
+      S'ha de fer pagina de perfil amb foto, descripcio, i altre info
+    </h2>
   </div>
 </template>
 

@@ -3,18 +3,6 @@
     <!-- MOBILE -->
     <div v-if="$device.isMobileOrTablet">
       <!-- HEADER START -->
-      <button
-        class="absolute top-8 right-4 z-50"
-        @click="themeStore.toggleTheme()"
-      >
-        <i
-          class="material-icons-outlined theme-icon mx-8 scale-90"
-          :class="{ 'border-surface-900': !themeStore.isDarkTheme }"
-          :title="themeStore.isDarkTheme ? 'Light mode' : 'Dark mode'"
-        >
-          {{ themeStore.isDarkTheme ? "light_mode" : "dark_mode" }}
-        </i>
-      </button>
       <!-- HEADER END -->
 
       <!-- CONTENT START -->
@@ -34,6 +22,20 @@
         </p>
       </div>
     </footer> -->
+      <footer>
+        <button
+          class="absolute bottom-20 right-1.5 z-50"
+          @click="themeStore.toggleTheme()"
+        >
+          <i
+            class="material-icons-outlined theme-icon mx-8 scale-90"
+            :class="{ 'border-surface-900': !themeStore.isDarkTheme }"
+            :title="themeStore.isDarkTheme ? 'Light mode' : 'Dark mode'"
+          >
+            {{ themeStore.isDarkTheme ? "light_mode" : "dark_mode" }}
+          </i>
+        </button>
+      </footer>
       <footer
         class="fixed bottom-0 mx-auto px-[4%] py-[4%] grid grid-cols-5 auto-cols-auto gap-2 justify-items-center border-t-2 border-surface-600 dark:border-surface-300"
       >
@@ -58,13 +60,15 @@
           @click="scrollToTop()"
           >photo_library</nuxt-link
         >
-        <nuxt-link
-          :to="user ? '/perfil' : '/auth' /* signInWithGoogle() */"
-          @click="scrollToTop()"
-          class="material-icons-outlined"
-        >
-          {{ user ? "account_circle" : "login" }}
-        </nuxt-link>
+        <client-only>
+          <nuxt-link
+            :to="user ? '/perfil' : '/auth' /* signInWithGoogle() */"
+            @click="scrollToTop()"
+            class="material-icons-outlined"
+          >
+            {{ user ? "account_circle" : "login" }}
+          </nuxt-link>
+        </client-only>
         <!--         <div class="absolute inset-x-0 bottom-0 flex justify-end">
           <p class="text-xs tracking-wide m-4 opacity-60">
             Made with<span

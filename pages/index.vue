@@ -4,13 +4,15 @@
       class="h-[34rem] absolute top-0 -mx-[6%] min-w-full"
     />
     <heroSection class="relative mb-80 md:mb-44 mt-20 md:mt-12" />
-    <div v-if="user">
-      <p>YES LOGGED</p>
-      <button @click="handleSignOut()" class="btn">Sign out</button>
-    </div>
-    <div v-else>
-      <p>NOT LOGGED</p>
-    </div>
+    <client-only>
+      <div v-if="user">
+        <p>YES LOGGED</p>
+        <button @click="handleSignOut()" class="btn">Sign out</button>
+      </div>
+      <div v-else>
+        <p>NOT LOGGED</p>
+      </div>
+    </client-only>
 
     <sectionOne class="my-24" />
   </div>

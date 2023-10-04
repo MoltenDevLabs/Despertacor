@@ -1,24 +1,38 @@
 <template>
-  <div class="">
+  <div>
     <h1 class="text-surface-300 font-semibold sm:text-5xl lg:text-6xl">
-      Web de la Coral MusSolidària
+      Vine a
+      <transition name="fade" mode="out-in">
+        <span
+          class="text-outline text-primary-500 font-bold"
+          :key="words[currentWordIndex]"
+          >{{ words[currentWordIndex] }}</span
+        >
+      </transition>
+      <br />
+      a la Coral MusSolidària
     </h1>
     <h2 class="text-surface-300 my-16 md:my-20 font-semibold text-xl">
-      Recurs per trobar les lletres, coneixer les artistes i més
+      Aqui trobaràs tot el que necessites per treure el màxim profit dels
+      assajos.
     </h2>
-    <div class="flex my-8">
-      <nuxt-link to="/temes">
-        <button class="btn dark:text-surface-300">Cançons</button>
-      </nuxt-link>
-      <nuxt-link to="/artistes">
-        <button class="btn ml-4 dark:text-surface-300 dark:border-surface-300">
-          Artistes
-        </button>
-      </nuxt-link>
-    </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const words = ["Cantar", "Riure", "Aprendre", "Jugar", "Divertir-te"];
+let currentWordIndex = ref(0);
 
-<style></style>
+onMounted(() => {
+  setInterval(() => {
+    currentWordIndex.value = (currentWordIndex.value + 1) % words.length;
+  }, 5000);
+});
+</script>
+
+<style>
+.text-outline {
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black,
+    -1px 1px black;
+}
+</style>

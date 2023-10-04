@@ -1,6 +1,7 @@
 <template>
   <div
     class="card text-center transition-all duration-500 hover:scale-105 mb-8 relative"
+    @click="$router.push(`/artistes/${nom}`)"
   >
     <img :src="imageSrc" class="m-0" alt="Some Image" />
     <button

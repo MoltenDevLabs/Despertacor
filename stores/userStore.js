@@ -37,37 +37,26 @@ export const useUserStore = defineStore("userStore", () => {
     });
   }
 
-  /* Persist the user logged in for 7 days */
-  const rememberDays = 7;
-  const remember = ref(false);
-
-  async function rememberMe() {
-    if (user.value && remember.value) {
-      const expires = new Date();
-      expires.setDate(expires.getDate() + rememberDays);
-      document.cookie = `userToken=${
-        user.value.token
-      }; expires=${expires.toUTCString()}`;
-    }
-  }
-
   const editing = ref(false);
   const editedUsername = ref("");
   const usernameRef = ref("");
 
   async function editProfile() {
     editing.value = !editing.value;
+  }
+
+  async function saveProfile() {
     try {
-      if (editing.value) {
-        if (editedUsername.value.length > 0) {
-          const { data, error } = await supabase
-            .from("profile")
-            .update({ username: editedUsername.value })
-            .eq("id", user.value.id)
-            .select();
-          if (data && data.length > 0) {
-            usernameRef.value = data[0].username;
-          }
+      if (editedUsername.value.length > 0) {
+        const { data, error } = await supabase
+          .from("profile")
+          .update({ username: editedUsername.value })
+          .eq("id", user.value.id)
+          .select();
+        console.log("Update data: ", data);
+        console.log("Update error: ", error);
+        if (data && data.length > 0) {
+          usernameRef.value = data[0].username;
           await fetchUser();
           editing.value = !editing.value;
         }
@@ -107,11 +96,10 @@ export const useUserStore = defineStore("userStore", () => {
     signUp,
     signOut,
     signInWithGoogle,
-    rememberMe,
     editProfile,
+    saveProfile,
     fetchUser,
     user,
-    remember,
     editing,
     editedUsername,
     usernameRef,

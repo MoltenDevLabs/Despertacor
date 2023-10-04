@@ -18,7 +18,7 @@
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^18.17.18",
-    "nuxt": "^3.7.3"
+    "nuxt": "^3.7.4"
   },
   "overrides": {
     "vue": "latest"

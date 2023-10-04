@@ -21,7 +21,7 @@
 
   main {
     @apply container max-w-none z-0
-      relative p-[4%] px-[6%] 
+      relative p-[4%] px-[6%]
       bg-surface-50 dark:bg-surface-900
       prose prose-slate dark:prose-invert 
       prose-headings:my-4 md:prose-headings:my-4 lg:prose-headings:my-4 xl:prose-headings:my-4
@@ -31,7 +31,7 @@
   header,
   footer {
     @apply container min-w-full z-10
-      bg-primary-50 dark:bg-primary-900 
+      bg-primary-100 dark:bg-primary-700 
       prose prose-slate dark:prose-invert 
       prose-a:no-underline
       transition-all duration-500 ease-in-out;
@@ -65,7 +65,7 @@ footer a {
 header a.router-link-exact-active,
 footer a.router-link-exact-active {
   @apply text-tertiary-500 dark:text-tertiary-500 
-    font-semibold
+    scale-125
     transition-all duration-500 ease-in-out;
 }
 header a:hover,
@@ -79,7 +79,7 @@ footer a:hover {
   .btn {
     @apply relative font-medium
       text-primary-100 dark:text-surface-900
-      bg-primary-700
+      bg-primary-600
       brightness-100
       overflow-hidden 
       px-3 py-2 rounded-lg

@@ -45,7 +45,6 @@
       <div class="flex flex-col align-bottom justify-end">
         <!-- <p class="text-sm mt-0">{{ user.email }}</p> -->
       </div>
-      <!-- <profileCard :nom="userStore.usernameRef" :imageSrc="imageSrc" /> -->
     </div>
     <div class="absolute inset-0 flex items-center justify-center rounded-full">
       <!-- The function "changeProfilePicture()" isn't done -->
@@ -63,7 +62,6 @@
 <script setup>
 import { useUserStore } from "@/stores/userStore";
 const userStore = useUserStore();
-const user = useSupabaseUser();
 
 onMounted(() => {
   userStore.fetchUser();

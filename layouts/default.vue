@@ -1,5 +1,6 @@
 <template>
   <div>
+    <vite-pwa-manifest />
     <div>
       <!-- HEADER START -->
       <!-- HEADER END -->

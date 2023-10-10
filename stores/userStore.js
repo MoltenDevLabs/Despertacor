@@ -1,3 +1,5 @@
+import defaultPfp from "@/assets/images/defaultPfp.png";
+
 export const useUserStore = defineStore("userStore", () => {
   const supabase = useSupabaseClient();
   const user = ref(undefined);
@@ -73,7 +75,7 @@ export const useUserStore = defineStore("userStore", () => {
     }
   }
 
-  const imageSrc = ref("/assets/images/defaultPfp.png");
+  const imageSrc = ref(defaultPfp);
 
   async function changeProfilePicture(e) {
     // Get the selected file from the event

@@ -46,22 +46,22 @@ export default defineNuxtConfig({
       start_url: "/",
       icons: [
         {
-          src: "/assets/icons/logoPWA-64x64.png",
+          src: "assets/icons/logoPWA-64x64.png",
           sizes: "64x64",
           type: "image/png",
         },
         {
-          src: "/assets/icons/logoPWA-144x144.png",
+          src: "assets/icons/logoPWA-144x144.png",
           sizes: "144x144",
           type: "image/png",
         },
         {
-          src: "/assets/icons/logoPWA-192x192.png",
+          src: "assets/icons/logoPWA-192x192.png",
           sizes: "192x192",
           type: "image/png",
         },
         {
-          src: "/assets/icons/logoPWA-512x512.png",
+          src: "assets/icons/logoPWA-512x512.png",
           sizes: "512x512",
           type: "image/png",
         },

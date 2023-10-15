@@ -75,9 +75,12 @@ export const useUserStore = defineStore("userStore", () => {
     }
   }
 
-  const imageSrc = ref(defaultPfp);
+  const imageSrc = ref(
+    "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/profile-pictures/defaultPfp.png?t=2023-10-15T20%3A03%3A14.545Z"
+  );
 
   async function changeProfilePicture(e) {
+    console.log("changeProfilePicture function called");
     // Get the selected file from the event
     const file = e.target.files[0];
     if (!file) return;
@@ -91,14 +94,12 @@ export const useUserStore = defineStore("userStore", () => {
       console.error("Error uploading file:", error);
       return;
     }
-
     // Update the user's profile with the URL of the uploaded file
-    const imageUrl = `${supabase.storageUrl}/profile-pictures/${user.value.id}/${file.name}`;
+    const imageUrl = `https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/profile-pictures/${user.value.id}/${file.name}`;
     const { data: updateData, error: updateError } = await supabase
       .from("profile")
       .update({ image_url: imageUrl })
       .eq("id", user.value.id);
-
     if (updateError) {
       console.error("Error updating profile picture URL:", updateError);
       return;

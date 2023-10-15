@@ -27,13 +27,13 @@
           <img
             :src="userStore.imageSrc"
             alt="Some Image"
-            class="m-0"
+            class="m-0 rounded-full object-cover"
             :class="userStore.editing ? 'brightness-50 opacity-80' : ''"
           />
           <input
             type="file"
             accept="image/*"
-            @change="changeProfilePicture"
+            @change="userStore.changeProfilePicture"
             class="hidden"
             ref="fileInput"
           />

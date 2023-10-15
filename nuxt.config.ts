@@ -51,7 +51,7 @@ export default defineNuxtConfig({
           type: "image/png",
         },
         {
-          src: "/icons/logoPWA-144x144.png",
+          src: "/assets/icons/logoPWA-144x144.png",
           sizes: "144x144",
           type: "image/png",
         },

@@ -25,7 +25,7 @@
     "vue": "latest"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.5.0",
+    "@pinia/nuxt": "^0.5.1",
     "nuxt-icons": "^3.2.1",
     "pinia": "^2.1.7"
   }

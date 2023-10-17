@@ -1,5 +1,3 @@
-import defaultPfp from "@/assets/images/defaultPfp.png";
-
 export const useUserStore = defineStore("userStore", () => {
   const supabase = useSupabaseClient();
   const user = ref(undefined);

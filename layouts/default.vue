@@ -1,6 +1,12 @@
 <template>
-  <div>
-    <vite-pwa-manifest />
+  <div v-if="$device.isDesktop">
+    <VitePwaManifest />
+    <main>
+      <slot />
+    </main>
+  </div>
+  <div v-else>
+    <VitePwaManifest />
     <div>
       <!-- HEADER START -->
       <!-- HEADER END -->

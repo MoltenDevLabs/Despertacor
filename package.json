@@ -19,7 +19,7 @@
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^18.17.18",
     "@vite-pwa/nuxt": "^0.1.1",
-    "nuxt": "^3.7.4"
+    "nuxt": "^3.8.0"
   },
   "overrides": {
     "vue": "latest"

@@ -1,5 +1,8 @@
 <template>
-  <div>
+  <div v-if="$device.isDesktop">
+    <desktopVersion />
+  </div>
+  <div v-else>
     <heroSectionBackground
       class="h-[34rem] absolute top-0 -mx-[6%] min-w-full"
     />

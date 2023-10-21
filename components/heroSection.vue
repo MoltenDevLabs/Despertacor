@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-surface-300 font-semibold sm:text-5xl lg:text-6xl">
+    <h1 class="text-surface-300 font-semibold">
       Vine a
       <transition name="fade" mode="out-in">
         <span
@@ -12,7 +12,7 @@
       <br />
       a la Coral MusSolidària
     </h1>
-    <h2 class="text-surface-300 my-16 md:my-20 font-semibold text-xl">
+    <h2 class="text-surface-300 my-24 font-semibold text-2xl">
       Aqui trobaràs tot el que necessites per treure el màxim profit dels
       assajos.
     </h2>

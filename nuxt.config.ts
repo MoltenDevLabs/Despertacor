@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     "@nuxtjs/supabase",
     "@nuxtjs/color-mode",
     "@nuxtjs/device",
-    "@vite-pwa/nuxt",
   ],
   app: {
     head: {
@@ -35,58 +34,6 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: "page", mode: "out-in" },
     layoutTransition: { name: "layout", mode: "out-in" },
-  },
-  experimental: {
-    appManifest: true,
-  },
-  pwa: {
-    manifest: {
-      name: "Coral",
-      short_name: "Coral",
-      description: "App de la coral",
-      lang: "en",
-      display: "standalone",
-      start_url: "/",
-      icons: [
-        /*         {
-          src: "assets/icons/logoPWA-64x64.png",
-          sizes: "64x64",
-          type: "image/png",
-        }, */
-        {
-          src: "/icons/logoPWA-144x144.png",
-          sizes: "144x144",
-          type: "image/png",
-          purpose: "any",
-        },
-        /*         {
-          src: "assets/icons/logoPWA-192x192.png",
-          sizes: "192x192",
-          type: "image/png",
-        },
-        {
-          src: "assets/icons/logoPWA-512x512.png",
-          sizes: "512x512",
-          type: "image/png",
-        }, */
-      ],
-      theme_color: "#ffffff",
-      background_color: "#ffffff",
-    },
-    workbox: {
-      navigateFallback: "/",
-      runtimeCaching: [
-        {
-          urlPattern: "/*",
-          handler: "NetworkFirst",
-          method: "GET",
-        },
-      ],
-    },
-    devOptions: {
-      enabled: true,
-      type: "module",
-    },
   },
   googleFonts: {
     families: {

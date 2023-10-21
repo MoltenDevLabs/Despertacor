@@ -1,13 +1,14 @@
 <template>
-  <div v-if="$device.isDesktop">
-    <desktopVersion />
-  </div>
-  <div v-else>
-    <heroSectionBackground
-      class="h-[34rem] absolute top-0 -mx-[6%] min-w-full"
-    />
-    <heroSection class="relative mb-80 mt-20" />
-    <sectionOne class="my-24" />
+  <div>
+    <div v-if="$device.isDesktop">
+      <desktopVersion />
+    </div>
+    <div v-else>
+      <heroSectionBackground
+        class="h-screen absolute top-0 -mx-[6%] min-w-full overflow-hidden"
+      />
+      <heroSection class="relative my-48" />
+    </div>
   </div>
 </template>
 

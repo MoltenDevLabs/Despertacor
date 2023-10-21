@@ -1,6 +1,6 @@
 export const useUserStore = defineStore("userStore", () => {
   const supabase = useSupabaseClient();
-  const user = ref(undefined);
+  const currentUser = ref(undefined);
 
   async function signIn({ email, password }) {
     const { data, error } = await supabase.auth.signInWithPassword({
@@ -9,7 +9,7 @@ export const useUserStore = defineStore("userStore", () => {
     });
     if (error) throw error;
     if (data) {
-      user.value = data;
+      currentUser.value = data;
       await fetchUser();
     }
   }
@@ -21,7 +21,7 @@ export const useUserStore = defineStore("userStore", () => {
     });
     if (error) throw error;
     if (data) {
-      user.value = data;
+      currentUser.value = data;
       await fetchUser();
     }
   }
@@ -29,7 +29,7 @@ export const useUserStore = defineStore("userStore", () => {
   async function signOut() {
     const { error } = await supabase.auth.signOut();
     if (error) throw error;
-    user.value = undefined;
+    currentUser.value = undefined;
   }
   async function signInWithGoogle() {
     const { data, error } = await supabase.auth.signInWithOAuth({
@@ -44,6 +44,8 @@ export const useUserStore = defineStore("userStore", () => {
   const descriptionRef = ref("");
 
   async function editProfile() {
+    editedUsername.value = usernameRef.value;
+    editedDescription.value = descriptionRef.value;
     editing.value = !editing.value;
   }
 
@@ -56,7 +58,7 @@ export const useUserStore = defineStore("userStore", () => {
             username: editedUsername.value,
             description: editedDescription.value,
           })
-          .eq("id", user.value.id)
+          .eq("id", currentUser.value.id)
           .select();
         if (data && data.length > 0) {
           usernameRef.value = data[0].username;
@@ -110,12 +112,12 @@ export const useUserStore = defineStore("userStore", () => {
   async function fetchUser() {
     try {
       const { data: profile } = await supabase.auth.getUser();
-      user.value = profile.user;
+      currentUser.value = profile.user;
 
       const { data, error } = await supabase
         .from("profile")
         .select("username, description")
-        .eq("id", user.value.id)
+        .eq("id", currentUser.value.id)
         .limit(1);
       if (error) {
         console.error("Error fetching username and description:", error);
@@ -132,6 +134,32 @@ export const useUserStore = defineStore("userStore", () => {
     }
   }
 
+  const allProfiles = ref([]);
+  async function fetchProfiles() {
+    console.log("fetchProfiles called");
+    const { data, error } = await supabase.from("profile").select("*");
+    if (error) {
+      console.error("Error fetching profiles: ", error);
+    } else {
+      allProfiles.value = data;
+      console.log("DATA: ", allProfiles.value);
+      console.log("spread operator data ", { ...data });
+    }
+  }
+
+  async function fetchId(id) {
+    const { data, error } = await supabase
+      .from("profile")
+      .select("*")
+      .eq("id", id);
+
+    if (error) {
+      console.error("Error fetching profile: ", error);
+    } else {
+      return data[0];
+    }
+  }
+
   return {
     signIn,
     signUp,
@@ -141,12 +169,15 @@ export const useUserStore = defineStore("userStore", () => {
     saveProfile,
     changeProfilePicture,
     fetchUser,
-    user,
+    fetchProfiles,
+    fetchId,
+    currentUser,
     editing,
     editedUsername,
     usernameRef,
     editedDescription,
     descriptionRef,
     imageSrc,
+    allProfiles,
   };
 });

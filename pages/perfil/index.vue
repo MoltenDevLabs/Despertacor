@@ -30,7 +30,7 @@
             class="m-0 rounded-full object-cover"
             :class="userStore.editing ? 'brightness-50 opacity-80' : ''"
           />
-          <input
+          <!--           <input
             type="file"
             accept="image/*"
             @change="userStore.changeProfilePicture"
@@ -43,7 +43,7 @@
             @click="$refs.fileInput.click()"
           >
             add_photo_alternate
-          </i>
+          </i> -->
         </div>
         <input
           v-if="userStore.editing"

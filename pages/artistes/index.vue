@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="grid grid-cols-2 gap-4 pt-4">
+    <div v-if="loading">Loading...</div>
+    <div v-else class="grid grid-cols-2 gap-4 pt-4">
       <userCard
-        v-for="(profile, index) in userStore.allProfiles"
+        v-for="(profile, index) in userStore.allProfiles.value"
         :key="index"
         :profile="profile"
       />
     </div>
-    <div v-if="loading">Loading...</div>
   </div>
 </template>
 

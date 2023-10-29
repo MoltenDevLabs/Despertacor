@@ -136,14 +136,14 @@ export const useUserStore = defineStore("userStore", () => {
 
   const allProfiles = ref([]);
   async function fetchProfiles() {
-    console.log("fetchProfiles called");
     const { data, error } = await supabase.from("profile").select("*");
     if (error) {
       console.error("Error fetching profiles: ", error);
     } else {
-      allProfiles.value = data;
-      console.log("DATA: ", allProfiles.value);
-      console.log("spread operator data ", { ...data });
+      allProfiles.value = [...data];
+      console.log("allProfiles.value: ", allProfiles.value);
+      console.log("DATA: ", data);
+      console.log("spread operator data ", [...data]);
     }
   }
 

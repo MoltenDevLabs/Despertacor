@@ -35,7 +35,7 @@
         Coincideixen les mirades <br />
         Fixades en l'horitzó <br />
         Potser avui farem victoria <br />
-        Potser enterrarem el foc <br />
+        Potser enterrarem el plor <br />
         <br />
         Som en acte de protesta <br />
         Som mans fredes vora el foc <br />
@@ -62,10 +62,7 @@
         Som la veu de la revolta <br />
         Netes de la por i el dol <br />
         <br />
-        Som en acte de protesta <br />
-        Som mans fredes vora el foc <br />
-        Som la veu de la revolta <br />
-        Netes de la por i el dol <br />
+        Som <br />
       </p>
     </div>
   </div>

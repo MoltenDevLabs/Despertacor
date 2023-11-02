@@ -1,5 +1,10 @@
 <template>
-  <div>
+  <div v-if="$device.isDesktop">
+    <main>
+      <slot />
+    </main>
+  </div>
+  <div v-else>
     <div>
       <!-- HEADER START -->
       <!-- HEADER END -->

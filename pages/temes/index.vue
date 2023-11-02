@@ -27,6 +27,11 @@
               >
             </li>
             <li class="cursor-pointer">
+              <nuxt-link to="/temes/goodnightSweetheart"
+                >Goodnight Sweetheart</nuxt-link
+              >
+            </li>
+            <li class="cursor-pointer">
               <nuxt-link to="/temes/amazingGrace">Amazing Grace</nuxt-link>
             </li>
             <li class="cursor-pointer">
@@ -37,9 +42,6 @@
             </li>
             <li class="cursor-pointer">
               <nuxt-link to="/temes/">Dona Dona*</nuxt-link>
-            </li>
-            <li class="cursor-pointer">
-              <nuxt-link to="/temes/">Good Night Sweetheart*</nuxt-link>
             </li>
           </ul>
         </div>

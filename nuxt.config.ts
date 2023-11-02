@@ -47,13 +47,6 @@ export default defineNuxtConfig({
     display: "swap", // 'auto' | 'block' | 'swap' | 'fallback' | 'optional'
     preconnect: true,
   },
-  pinia: {
-    autoImports: [
-      // automatically imports `defineStore`
-      "defineStore", // import { defineStore } from 'pinia'
-      ["defineStore", "definePiniaStore"], // import { defineStore as definePiniaStore } from 'pinia'
-    ],
-  },
   colorMode: {
     classSuffix: "",
     preference: "system",

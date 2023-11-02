@@ -23,38 +23,52 @@
 
     <div class="mx-16">
       <div class="card text-center mb-8 relative">
-        <img
-          :src="imageSrc"
-          alt="Some Image"
-          class="m-0"
-          :class="userStore.editing ? 'brightness-50 opacity-80' : ''"
-        />
+        <div class="relative">
+          <img
+            :src="userStore.imageSrc"
+            alt="Some Image"
+            class="m-0 rounded-full object-cover"
+            :class="userStore.editing ? 'brightness-50 opacity-80' : ''"
+          />
+          <!--           <input
+            type="file"
+            accept="image/*"
+            @change="userStore.changeProfilePicture"
+            class="hidden"
+            ref="fileInput"
+          />
+          <i
+            v-if="userStore.editing"
+            class="btn-text z-30 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-surface-300 dark:text-surface-900 outline-none shadow-none p-1 material-icons-outlined bg-surface-900 dark:dark:bg-surface-300"
+            @click="$refs.fileInput.click()"
+          >
+            add_photo_alternate
+          </i> -->
+        </div>
         <input
           v-if="userStore.editing"
           v-model="userStore.editedUsername"
-          class="inp py-0 px-12 z-40 absolute -bottom-1 left-1/2 transform -translate-x-1/2 translate-y-full"
+          class="inp py-0 px-2 w-full z-40 absolute -bottom-1 left-1/2 transform -translate-x-1/2 translate-y-full text-center"
           type="text"
         />
         <p
           v-else
-          class="btn py-0 px-12 absolute -bottom-1 left-1/2 transform -translate-x-1/2 translate-y-full"
+          class="btn py-0 px-2 w-full absolute -bottom-1 left-1/2 transform -translate-x-1/2 translate-y-[170%]"
         >
           {{ userStore.usernameRef }}
         </p>
       </div>
-      <div class="flex flex-col align-bottom justify-end">
-        <!-- <p class="text-sm mt-0">{{ user.email }}</p> -->
-      </div>
     </div>
-    <div class="absolute inset-0 flex items-center justify-center rounded-full">
-      <!-- The function "changeProfilePicture()" isn't done -->
-      <!--           <i
-            v-if="userStore.editing"
-            class="btn-text text-surface-300 dark:text-surface-900 outline-none shadow-none p-1 material-icons-outlined bg-surface-900 dark:dark:bg-surface-300"
-            @click="changeProfilePicture()"
-          >
-            edit
-          </i> -->
+    <div class="my-16">
+      <textarea
+        v-if="userStore.editing"
+        v-model="userStore.editedDescription"
+        class="inp py-1 px-2 w-full resize-none"
+        rows="12"
+      />
+      <p v-else class="py-1 px-2 w-full">
+        {{ userStore.descriptionRef }}
+      </p>
     </div>
   </div>
 </template>
@@ -66,9 +80,6 @@ const userStore = useUserStore();
 onMounted(() => {
   userStore.fetchUser();
 });
-
-const imageSrc =
-  "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/sign/cantants-coral/mussol1.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJjYW50YW50cy1jb3JhbC9tdXNzb2wxLnBuZyIsImlhdCI6MTY5NTMxMDA2NiwiZXhwIjoxNzI2ODQ2MDY2fQ.UPJSr62F62Ivcm2jLf-wXKRcmNFWE9dlLeT6eDj6rCg&t=2023-09-21T15%3A27%3A46.549Z";
 
 definePageMeta({
   middleware: "auth",

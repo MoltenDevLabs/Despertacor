@@ -46,7 +46,7 @@
         <br />
         You can dance <br />
         You can jive <br />
-        Having the time of your life <br />
+        Having the time of your life | aaaaa.... <br />
         Ooh, see that girl <br />
         Watch that scene <br />
         Digging the dancing queen <br />
@@ -71,7 +71,8 @@
         Ooh, see that girl <br />
         Watch that scene <br />
         Digging the dancing queen <br />
-        Digging the dancing queen
+        <br />
+        Digging the dancing queen <br />
       </p>
     </div>
   </div>

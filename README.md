@@ -1,62 +1,60 @@
-## Project Title:
+# Coral Mussòlidaria Reus Mobile App
 
-Coral Mussòlidaria Reus
+## Table of Contents
 
-## Project Description:
+- [Project Overview](#project-overview)
+- [Tech Stack](#tech-stack)
+- [Installation & Setup](#installation-and-setup)
+  - [Project Minimal Starter](#project-minimal-starter)
+  - [Deploy on Netlify Setup](#deploy-on-netlify-setup)
+  - [Supabase Integration](#supabase-integration)
 
-This project is a web app for the use of the members of the Coral Mussolidària Reus,
-a place where every participant can easily find all the resources needed to focus on singing, enjoying and sharing
-rather than spending time searching for lyrics, photos of old events and such.
+## Project Overview
 
-## Tech Stack:
+Welcome to the Coral Mussòlidaria Reus Mobile App project. This app is tailored to the members of the Coral Mussolidària Reus community, providing an effortless way for participants to access all resources necessary for a delightful singing and sharing experience. Say goodbye to the hassle of searching for lyrics, event photos, and more. This app is designed to enrich your involvement in the community.
 
-This project makes use of:
+## Tech Stack
 
-- HTML5 as the markup language
-- Tailwind as the styling tool
-- Vue and Nuxt 3 as the Javascript framework
-- Supabase as the backend
-- Netlify for deploying
+The project leverages a cutting-edge tech stack to deliver a seamless and feature-rich experience. Here are the key technologies used:
 
-## Installation & Setup:
+- **HTML5:** The foundational markup language ensuring a modern and robust app structure.
+- **Tailwind CSS:** A powerful styling tool that adds elegance and responsiveness to the app's design, enhancing user experience.
+- **Vue and Nuxt 3:** Dynamic JavaScript frameworks that provide flexibility, interactivity, and speed, resulting in a seamless and engaging user interface.
+- **Supabase:** As the backend technology, Supabase empowers the app with data management, security, and scalability, ensuring smooth performance and reliable data handling.
+- **Netlify:** The chosen deployment platform, known for its efficiency and hassle-free delivery of the app to users.
 
-# Project minimal starter
+## Installation & Setup
 
-# npm
+To get started with the Coral Mussòlidaria Reus Mobile App, follow these setup instructions.
 
+### Project Minimal Starter
+
+To install the necessary dependencies, run the following command:
+
+```bash
 npm install
-
-# .env
-
-Create a .env file with Supabase info:
-SUPABASE_URL= "https://someUrl.supabase.co"
-SUPABASE_KEY= "someKey"
-
----
+```
 
 ## Deploy on netlify setup
 
-# package.json
+Update your package.json with the following script for Netlify deployment:
 
 "scripts": {
 "predeploy": "npm run build"
 }
 
-# netlify.toml
-
-Create a netlify.toml file and include the code below
+Create a netlify.toml file and include the following code:
 
 [build]
 command = "npm run generate"
 publish = "dist"
 
----
+## Supabase Integration
 
-## If there's supabase in the project
+If your project includes Supabase, make the following configurations:
 
-# nuxt.config.ts
-
-Add the following code to the nuxt.config.ts file
+Update nuxt.config.ts
+Add the following code to your nuxt.config.ts file:
 
 supabase: {
 redirect: false,
@@ -72,6 +70,9 @@ supabaseKey: process.env.SUPABASE_KEY,
 },
 }
 
-```
+Create a .env file with your Supabase information:
 
-```
+SUPABASE_URL="https://someUrl.supabase.co"
+SUPABASE_KEY="someKey"
+
+With these steps, you'll be well-prepared to run and deploy the Coral Mussòlidaria Reus Mobile App.

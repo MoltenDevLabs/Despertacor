@@ -14,7 +14,7 @@ This project makes use of:
 
 - HTML5 as the markup language
 - Tailwind as the styling tool
-- Nuxt 3 as the framework
+- Vue and Nuxt 3 as the Javascript framework
 - Supabase as the backend
 - Netlify for deploying
 
@@ -58,6 +58,11 @@ publish = "dist"
 
 Add the following code to the nuxt.config.ts file
 
+supabase: {
+redirect: false,
+url: process.env.SUPABASE_URL,
+key: process.env.SUPABASE_KEY,
+},
 runtimeConfig: {
 public: {
 supabaseUrl: process.env.SUPABASE_URL,

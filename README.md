@@ -39,15 +39,19 @@ npm install
 
 Update your package.json with the following script for Netlify deployment:
 
+```bash
 "scripts": {
-"predeploy": "npm run build"
+  "predeploy": "npm run build"
 }
+```
 
 Create a netlify.toml file and include the following code:
 
+```bash
 [build]
-command = "npm run generate"
-publish = "dist"
+  command = "npm run generate"
+  publish = "dist"
+```
 
 ## Supabase Integration
 
@@ -56,23 +60,27 @@ If your project includes Supabase, make the following configurations:
 Update nuxt.config.ts
 Add the following code to your nuxt.config.ts file:
 
+```bash
 supabase: {
-redirect: false,
-url: process.env.SUPABASE_URL,
-key: process.env.SUPABASE_KEY,
+  redirect: false,
+  url: process.env.SUPABASE_URL,
+  key: process.env.SUPABASE_KEY,
 },
 runtimeConfig: {
-public: {
-supabaseUrl: process.env.SUPABASE_URL,
-},
-private: {
-supabaseKey: process.env.SUPABASE_KEY,
-},
+  public: {
+    supabaseUrl: process.env.SUPABASE_URL,
+  },
+  private: {
+    supabaseKey: process.env.SUPABASE_KEY,
+  },
 }
+```
 
 Create a .env file with your Supabase information:
 
+```bash
 SUPABASE_URL="https://someUrl.supabase.co"
 SUPABASE_KEY="someKey"
+```
 
 With these steps, you'll be well-prepared to run and deploy the Coral Mussòlidaria Reus Mobile App.

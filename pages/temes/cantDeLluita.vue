@@ -47,20 +47,10 @@
         El sol mantindrà la flama <br />
         La lluna encendrà passió <br />
         <br />
-        Som en acte de protesta <br />
-        Som mans fredes vora el foc <br />
-        Som la veu de la revolta <br />
-        Netes de la por i el dol <br />
-        <br />
-        Som en acte de protesta <br />
-        Som mans fredes vora el foc <br />
-        Som la veu de la revolta <br />
-        Netes de la por i el dol <br />
-        <br />
-        Som en acte de protesta <br />
-        Som mans fredes vora el foc <br />
-        Som la veu de la revolta <br />
-        Netes de la por i el dol <br />
+        Som en acte de protesta | en acte de protesta <br />
+        Som mans fredes vora el foc | mans fredes vora el foc <br />
+        Som la veu de la revolta | la veu de la revolta <br />
+        Netes de la por i el dol | la por i el dol ... ... <br />
         <br />
         Som <br />
       </p>

@@ -35,7 +35,7 @@
               <nuxt-link to="/temes/amazingGrace">Amazing Grace</nuxt-link>
             </li>
             <li class="cursor-pointer">
-              <nuxt-link to="/temes/">Nunu*</nuxt-link>
+              <nuxt-link to="/temes/krinitsa">Krinitsa (nunu)</nuxt-link>
             </li>
             <li class="cursor-pointer">
               <nuxt-link to="/temes/">Rainbow*</nuxt-link>

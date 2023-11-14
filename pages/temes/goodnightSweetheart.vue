@@ -19,33 +19,41 @@
       <p>
         Goodnight sweetheart, well, it's time to go <br />
         Goodnight sweetheart, well, it's time to go <br />
-        I hate to leave you, but I really must say <br />
-        Oh, goodnight sweetheart, goodnight <br />
+        I hate to leave you, but I really must say | aa-aa-aa-a <br />
+        So, goodnight sweetheart, goodnight <br />
         <br />
         Goodnight sweetheart, well, it's time to go <br />
-        Goodnight sweetheart, well, it's time to go<br />
-        I hate to leave you, but I really must say<br />
-        Oh, goodnight sweetheart, goodnight<br />
+        Goodnight sweetheart, well, it's time to go <br />
+        I hate to leave you, but I really must say | aa-aa-aa-a <br />
+        So, goodnight sweetheart, goodnight <br />
         <br />
-        Well, it's three o'clock in the morning<br />
-        Baby, I just can't treat you right<br />
-        Well, I hate to leave you, baby<br />
-        Don't mean, maybe because I love you so<br />
+        Well, it's three o'clock in the morning | aaaa-aaaa <br />
+        Baby, just can't treat you right | aaaa-aaaa <br />
+        Well, I hate to leave you, baby | aa <br />
+        But don't mean maybe, you know I love you so <br />
         <br />
-        Goodnight sweetheart, well, it's time to go<br />
-        Goodnight sweetheart, well, it's time to go<br />
-        I hate to leave you, but I really must say<br />
-        Oh, goodnight, sweetheart, goodnight<br />
+        Goodnight sweetheart, well, it's time to go <br />
+        Goodnight sweetheart, well, it's time to go <br />
+        I hate to leave you, but I really must say | aa-aa-aa-a <br />
+        So, goodnight sweetheart, goodnight <br />
         <br />
-        Mother and your father<br />
-        Won't like it if I stay here too long<br />
-        One kiss in the dark<br />
-        And I'll be going, you know I hate to go<br />
+        Goodnight sweetheart, well, it's time to go <br />
+        Goodnight sweetheart, well, it's time to go <br />
+        I hate to leave you, but I really must say | aa-aa-aa-a <br />
+        So, goodnight sweetheart, goodnight <br />
         <br />
-        Goodnight sweetheart, well, it's time to go<br />
-        Goodnight sweetheart, well, it's time to go<br />
-        I hate to leave you, but I really must say<br />
-        Oh, goodnight, sweetheart, goodnight<br />
+        Mother, ooh and your father | aaaa-aaaa <br />
+        Won't like it if I stay here too long | aaaa-aaaa <br />
+        One kiss in the dark | aa <br />
+        And I'll be going, you know I hate to go <br />
+        <br />
+        Goodnight sweetheart, well, it's time to go <br />
+        Goodnight sweetheart, well, it's time to go <br />
+        I hate to leave you, but I really must say | aa-aa-aa-a <br />
+        So, goodnight sweetheart, goodnight <br />
+        <br />
+        So, goodnight sweetheart, goodnight ... ... <br />
+        <br />
       </p>
     </div>
   </div>

@@ -2,7 +2,8 @@
   <div class="relative">
     <div>
         <button class="absolute top-0 right-12 z-50" @click="navigateTo()">
-        <i class="material-icons-outlined theme-icon scale-90">arrow_back</i>
+        <i class="material-icons-outlined theme-icon scale-90"
+        :class="{ 'border-surface-900': !themeStore.isDarkTheme }">arrow_back</i>
       </button>
       <button
         class="absolute top-0 right-2 z-50"

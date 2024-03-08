@@ -1,12 +1,13 @@
 <template>
   <article class="m-auto prose prose-stone dark:prose-invert">
-    <div class="mt-7 text-center">
-      <h2 class="mt-7 text-7xl font-bold">{{ error.statusCode }}</h2>
-      <p class="mt-7 text-6xl">
+    <div class="mt-8 text-center">
+      <p class="mb-0 text-6xl font-bold">ERROR</p>
+      <h2 class="mt-2 text-6xl font-bold">{{ error.statusCode }}</h2>
+      <p class="mt-8 mx-2 text-4xl">
         Oops! Hi ha hagut un error! Recorda que és una pàgina en construcció.
       </p>
-      <p class="mt-7">{{ error.message }}</p>
-      <button class="btn my-7" @click="handleClearError()">
+      <p class="mt-8">{{ error.message }}</p>
+      <button class="btn my-8" @click="handleClearError()">
         Tornar a Home
       </button>
     </div>

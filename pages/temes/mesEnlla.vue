@@ -36,12 +36,20 @@
         Pren el teu temps, busca el moment, <br />
         que mai no és tard per descobrir-te. <br />
         <br />
-        Pot ser pou on tot s´ofega, <br />
+        Pots ser pou on tot s´ofega, <br />
         o bé font d'on creixi l´herba. <br />
         Tenir o donar, sentir o insensibilitzar-te. <br />
         Ets la llum del teu planeta, <br />
         ets qui té la teva adreça, <br />
         un univers que és dins de la teva consciència. <br />
+
+        No busquis regles <br />
+        que tots els camins porten cap a tu. <br />
+        Ets la ruta i el destí, tan sols cal mirar endins. <br />
+        Tots som nit i tots matí perduts al paradís. <br />
+        Pren el teu temps, busca el moment, <br />
+        que mai no és tard per descobrir-te. <br />
+
         Dreceres incertes, dubtes que m´arrosseguen, <br />
         sentits que em fan somriure i creure en quimeres. <br />
         <br />

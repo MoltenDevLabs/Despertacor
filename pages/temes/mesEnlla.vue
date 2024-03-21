@@ -39,6 +39,7 @@
         Pots ser pou on tot s´ofega, <br />
         o bé font d'on creixi l´herba. <br />
         Tenir o donar, sentir o insensibilitzar-te. <br />
+<br />
         Ets la llum del teu planeta, <br />
         ets qui té la teva adreça, <br />
         un univers que és dins de la teva consciència. <br />
@@ -56,7 +57,9 @@
         Més enllà dels teus problemes,<br />
         més enllà d'aquesta pena<br />
         hi ha un lloc feliç,<br />
-        només has de provar a endinsar-t'hi.<br />
+hi ha un paradís <br/>
+        hi ha un lloc feliç<br />
+per a tu <br />
       </p>
     </div>
   </div>

@@ -74,6 +74,16 @@
         Junts, podem arribar més lluny <br />
         Més lluny <br />
         <br />
+        Quan tot s'enlaira <br />
+        Toco els somnis de puntetes <br />
+        Junts, podem arribar més lluny <br />
+        Més lluny <br />
+        <br />
+        Un llarg viatge <br />
+        Il·lusions dins les maletes <br />
+        Junts, podem arribar més lluny <br />
+        Més lluny <br />
+        <br />
         Quan tot s'enlaira
       </p>
     </div>

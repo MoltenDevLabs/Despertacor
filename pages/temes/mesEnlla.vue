@@ -49,7 +49,7 @@
         Tots som nit i tots matí perduts al paradís. <br />
         Pren el teu temps, busca el moment, <br />
         que mai no és tard per descobrir-te. <br />
-
+<br />
         Dreceres incertes, dubtes que m´arrosseguen, <br />
         sentits que em fan somriure i creure en quimeres. <br />
         <br />

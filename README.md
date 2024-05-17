@@ -1,4 +1,4 @@
-# Coral Mussòlidaria Reus Mobile App
+# Coral Despertacor Mobile App
 
 ## Table of Contents
 
@@ -11,7 +11,7 @@
 
 ## Project Overview
 
-Welcome to the Coral Mussòlidaria Reus Mobile App project. This app is tailored to the members of the Coral Mussolidària Reus community, providing an effortless way for participants to access all resources necessary for a delightful singing and sharing experience. Say goodbye to the hassle of searching for lyrics, event photos, and more. This app is designed to enrich your involvement in the community.
+Welcome to the Coral Despertacor Mobile App project. This app is tailored to the members of the Coral Mussolidària Reus community, providing an effortless way for participants to access all resources necessary for a delightful singing and sharing experience. Say goodbye to the hassle of searching for lyrics, event photos, and more. This app is designed to enrich your involvement in the community.
 
 ## Tech Stack
 
@@ -25,7 +25,7 @@ The project leverages a cutting-edge tech stack to deliver a seamless and featur
 
 ## Installation & Setup
 
-To get started with the Coral Mussòlidaria Reus Mobile App, follow these setup instructions.
+To get started with the Coral Despertacor Mobile App, follow these setup instructions.
 
 ### Project Minimal Starter
 

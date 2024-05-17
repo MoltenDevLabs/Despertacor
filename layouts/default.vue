@@ -56,8 +56,6 @@
 </template>
 
 <script setup>
-const user = useSupabaseUser();
-
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,

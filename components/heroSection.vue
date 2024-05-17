@@ -10,7 +10,7 @@
         >
       </transition>
       <br />
-      a la Coral MusSolidària
+      a la Coral Despertacor
     </h1>
     <h2 class="text-surface-300 my-24 font-semibold text-2xl">
       Aqui trobaràs tot el que necessites per treure el màxim profit dels

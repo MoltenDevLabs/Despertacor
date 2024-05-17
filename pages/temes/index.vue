@@ -19,6 +19,9 @@
               <nuxt-link to="/temes/mesEnlla">Més Enlla</nuxt-link>
             </li>
             <li class="cursor-pointer">
+              <nuxt-link to="/temes/ageOfAquarius">Age of Aquarius</nuxt-link>
+            </li>
+            <li class="cursor-pointer">
               <nuxt-link to="/temes/cuentame">Cuéntame</nuxt-link>
             </li>
             <li class="cursor-pointer">

@@ -50,6 +50,8 @@
         Desfent la neu a dins dels teus llençols <br />
         I tu i jo, fins que se't curin les ales <br />
         Jo seré aquí espantant els teus malsons <br />
+Compta amb mi 
+<br />
       </p>
     </div>
   </div>

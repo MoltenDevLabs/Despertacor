@@ -31,7 +31,7 @@
         Dels teus somnis, quan no els trobis <br />
         Compta amb mi <br />
         <br />
-        I tu i jo, en una ciutat gelada <br />
+        I tu i jo, en la ciutat gelada <br />
         Desfent la neu a dins dels teus llençols <br />
         I tu i jo, fins que se't curin les ales <br />
         Jo seré aquí espantant els teus malsons <br />
@@ -41,12 +41,12 @@
         Als mals passos hi haurà uns braços <br />
         Compta amb mi <br />
         <br />
-        I tu i jo, en una ciutat gelada <br />
+        I tu i jo, en la ciutat gelada <br />
         Desfent la neu a dins dels teus llençols <br />
         I tu i jo, fins que se't curin les ales <br />
         Jo seré aquí espantant els teus malsons <br />
         <br />
-        I tu i jo, en una ciutat gelada <br />
+        I tu i jo, en la ciutat gelada <br />
         Desfent la neu a dins dels teus llençols <br />
         I tu i jo, fins que se't curin les ales <br />
         Jo seré aquí espantant els teus malsons <br />

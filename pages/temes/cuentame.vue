@@ -32,7 +32,7 @@
         <br />
         Yo me saque la loteria <br />
         Corriendo fui de romeria <br />
-        Y fue alli donde to el dinero perderi <br />
+        Y fue alli donde to'l dinero yo perdí <br />
         <br />
         Pero las dos vienen las dos pao pao <br />
         <br />

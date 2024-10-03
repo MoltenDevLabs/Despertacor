@@ -16,6 +16,9 @@
               <nuxt-link to="/temes/cantDeLluita">Cant de Lluita</nuxt-link>
             </li>
             <li class="cursor-pointer">
+              <nuxt-link to="/temes/correllengua">Correllengua</nuxt-link>
+            </li>
+            <li class="cursor-pointer">
               <nuxt-link to="/temes/mesEnlla">Més Enlla</nuxt-link>
             </li>
             <li class="cursor-pointer">

@@ -6,16 +6,15 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxtjs/google-fonts",
     "nuxt-icons",
-    "@nuxtjs/supabase",
     "@nuxtjs/color-mode",
     "@nuxtjs/device",
   ],
   app: {
     head: {
-      title: "Coral Solidària Reus",
+      title: "Coral Despertacor",
       meta: [
         {
-          name: "Coral Solidària Reus",
+          name: "Coral Despertacor",
           content: "Cançons, membres i algunes coses més",
           charset: "UTF-8",
         },
@@ -53,10 +52,9 @@ export default defineNuxtConfig({
     fallback: "dark",
   },
   tailwindcss: {
-    cssPath: "@/assets/css/tailwind.css",
+    cssPath: ["@/assets/css/tailwind.css", { injectPosition: 0 }],
     configPath: "tailwind.config.js",
     exposeConfig: false,
-    injectPosition: 0,
     viewer: true,
   },
   device: {
@@ -67,20 +65,6 @@ export default defineNuxtConfig({
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
-    },
-  },
-  pages: true,
-  supabase: {
-    redirect: false,
-    url: process.env.SUPABASE_URL,
-    key: process.env.SUPABASE_KEY,
-  },
-  runtimeConfig: {
-    public: {
-      supabaseUrl: process.env.SUPABASE_URL,
-    },
-    private: {
-      supabaseKey: process.env.SUPABASE_KEY,
     },
   },
 });

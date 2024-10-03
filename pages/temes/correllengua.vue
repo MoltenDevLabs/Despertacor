@@ -52,7 +52,7 @@
         <br />
         io io <br />
         Xalem com un moixó <br />
-        que piula la paraula d'un poble a cada racó <br />
+        piula la paraula d'un poble a cada racó <br />
         <br />
         io io <br />
         Xalem com un moixó <br />

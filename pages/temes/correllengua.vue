@@ -20,7 +20,7 @@
         Diuen aqueta i aquet, <br />
         és l'esperit ganxet <br />
         que t'empaita per la plaça <br />
-        pilla al bou i la Mulassa <br />
+        pilla al bou i a la Mulassa <br />
         <br />
         Diuen siroll i en sec, <br />
         que no pari aquest batec <br />

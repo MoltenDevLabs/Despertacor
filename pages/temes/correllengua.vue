@@ -23,8 +23,8 @@
         pilla al bou i a la Mulassa <br />
         <br />
         Diuen siroll i en sec, <br />
-        que no pari aquest batec <br />
-        que no pari aquesta fenya <br />
+        que no pari aquet batec <br />
+        que no pari aqueta fenya <br />
         i esmolem ben bé les enyes <br />
         <br />
         io io <br />

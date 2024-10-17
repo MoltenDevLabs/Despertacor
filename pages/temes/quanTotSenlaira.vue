@@ -47,7 +47,7 @@
         Junts, podem arribar més lluny <br />
         Més lluny <br />
         <br />
-        Vaig, flirtejant amb la por <br />
+        Vaig, flirtejant amb la por (uuh) <br />
         Navegant entre dubtes <br />
         Vaig somiant amb la teva escalfor <br />
         <br />
